@@ -1,7 +1,6 @@
 :menu
 cls
 call modules\navbar "Welcome ! Please select something."
-echo.
 
 REM Add menu options in the nav separator by looping through every page present in the "pages" folder
 set "pageList="
