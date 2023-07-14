@@ -6,7 +6,6 @@ call plugins\batbox /g 0 2 /c 0x87 /d "Type in ':q' to leave type mode."
 
 REM Reeneable console features
 call plugins\cmdwiz showcursor 1
-if !isOnWindowsEleven! == 0 call plugins\cmdwiz setbuffersize 1 1
 
 REM Create convo files if they do not exist
 if not exist "cache\convo_line.cryuip" (

@@ -1,6 +1,3 @@
-# Eneable this if you are on windows 11. 
-isOnWindowsEleven=1
-
 # Should data usage be sent to BatchAi developpers
 # Data contains : crash logs, conversations with AI considered as harmful or dangerous.
 collectDataUsage=1

@@ -5,7 +5,6 @@ REM         The name of the current page
 
 REM Hide some console features
 call plugins\cmdwiz showcursor 0
-if !isOnWindowsEleven! == 0 call plugins\cmdwiz setbuffersize - -
 
 REM Show the page title on top of the navbar
 call plugins\batbox /g 1 1 /c 0xa /d "!aiName!" /c 0x8 /d " - " /c 0xf /d %1
