@@ -16,7 +16,7 @@ call plugins\batbox /g 0 16 /c 0x08 /d "Press any key to go back..."
 call plugins\getinput
 
 REM Pressed a key instead of a click
-if !errorlevel! GTR 0 goto:EOF
+if !errorlevel! GTR 0 goto :EOF
 
 REM Actually clicked
 set /A "input=-!errorlevel!, clickY=input >> 16, clickX=input & 0xFFFF"
