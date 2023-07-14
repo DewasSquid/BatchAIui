@@ -1,3 +1,11 @@
-# Should data usage be sent to BatchAi developpers
-# Data contains : crash logs, conversations with AI considered as harmful or dangerous.
-collectDataUsage=1
+# Automaticly update when the computer starts
+# Updates will still occur when you start the app, except if offline mode was previously enabled
+updateOnStartup=0
+
+# Send cache to BatchAi developpers when reporting a bug (including conversation with AI)
+shouldCollectCache=1
+
+# Shall offline mode be enabled ?
+# This will download data from our server to your local machine, remove TOS security measures and allow you to play with the AI as much as you want
+# Once this option is enabled, you will not recieve any new updates until disabled
+offlineMode=0
