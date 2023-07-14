@@ -5,7 +5,7 @@ REM TODO: Remote update
 
 :config
 set aiName=BatchAI
-set version=0.1.2
+set version=0.1.4
 
 title BatchAI
 
