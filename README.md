@@ -9,3 +9,4 @@ The list include :
   - cmdmenusel
   - cmdwiz
   - typewriter
+  - getinput
