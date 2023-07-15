@@ -6,7 +6,7 @@ call plugins\batbox /g !windowCenterWidth! 3 /c 0x0a /d "!aiName!" /c 0x08 /d " 
 
 REM Show credits
 call plugins\batbox /g 0 5 /c 0x0f /d "Original concept & AI Core/Logistics: Rekatur" /n /d "User Interface: DewasSquid"
-call plugins\batbox /g 0 8 /c 0x0f /d "Join us:" /n /c 0x01 /d "|> https://discord.gg/yXg7u8Bt"
+call plugins\batbox /g 0 8 /c 0x0f /d "Join us:" /n /c 0x01 /d "|> https://discord.gg/HC9ktM3UAe"
 call plugins\batbox /g 0 11 /c 0x0f /d "Follow us:" /n /c 0x01 /d "|> https://www.youtube.com/@rekatur6096" /n /d "|> https://github.com/DewasSquid"
 
 REM Wait for mouse left click, if something else is pressed, go back.
@@ -25,7 +25,7 @@ REM Click was not a left click
 if !clickX! GEQ 32768 goto :EOF
 
 REM Clicked on discord link
-if !clickX! GEQ 0 if !clickX! LEQ 30 if !clickY! == 9 start "" https://discord.gg/yXg7u8Bt
+if !clickX! GEQ 0 if !clickX! LEQ 32 if !clickY! == 9 start "" https://discord.gg/HC9ktM3UAe
 REM Clicked on rekatur channel
 if !clickX! GEQ 0 if !clickX! LEQ 39 if !clickY! == 12 start "" https://www.youtube.com/@rekatur6096
 REM Clicked on dewassquid github
