@@ -22,9 +22,7 @@ for /f "tokens=*" %%l in (cache\convo.cryuip) do call plugins\batbox %%l
 
 :askPrompt
 REM Generate an input widget
-for /l %%x in (0, 1, !windowWidth!) do (
-    call plugins\batbox /g %%x 3 /c 0xff /d "X"
-)
+call plugins\batbox /g %%x 3 /c 0xff /d "!fillWindowWidth!"
 
 REM Change the text color to the opposite of the input widget so it can be readable and ask for a prompt
 call plugins\batbox /c 0xf0 /g 0 3 & set /p prompt=Prompt:

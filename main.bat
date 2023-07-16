@@ -35,7 +35,7 @@ REM Get the center coordinates of the screen
 set /a windowCenterWidth=!windowWidth! / 2
 set /a windowCenterHeight=!windowHeight! / 2
 
-REM TODO: faster display line method using predefined character list
+REM faster display line method using predefined character list
 set "fillWindowWidth="
 for /l %%x in (0, 1, !windowWidth!) do (
     set fillWindowWidth=!fillWindowWidth!X
