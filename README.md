@@ -10,3 +10,4 @@ The list include :
   - cmdwiz
   - typewriter
   - getinput
+  - editline
