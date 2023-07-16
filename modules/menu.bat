@@ -16,7 +16,6 @@ call plugins\cmdmenusel 7007 !pageList!
 
 REM Get the ID of each pages and call the selected one according to errorlevel
 set /a pageId=1
-
 for /f %%f in ('dir /b .\pages') do (
     if !pageId!==!errorlevel! (
         call pages\%%f
