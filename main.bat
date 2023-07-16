@@ -2,6 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM TODO: Remote update
+REM TODO: faster display line method using predefined character list
 
 :config
 set aiName=BatchAI
