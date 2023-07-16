@@ -25,6 +25,9 @@ if !errorlevel!==0 goto :reportPage
 
 REM Ask for the description
 call plugins\batbox /g 0 11 /c 0x07 & set /p bugDescription=
+REM Check if a description was provided
+plugins\cmdwiz stringlen !bugDescription!
+if !errorlevel!==0 goto :reportPage
 
 REM Ask for confirmation
 cls
