@@ -18,7 +18,7 @@ if "!userContact!"=="" set userContact=Not specified.
 REM Ask for the title
 call plugins\batbox /g 0 8 /c 0x07 & set /p bugTitle=
 
-REM Check if the length of the title is more than 30 chars or equal to 0, if so, refresh
+REM Check if the length of the title is more than 30 chars or empty, if so, refresh
 plugins\cmdwiz stringlen !bugTitle! 
 if !errorlevel! GTR 30 goto :reportPage
 if !errorlevel!==0 goto :reportPage
