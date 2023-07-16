@@ -71,7 +71,12 @@ for /f %%f in ('dir /b ".\cache"') do (
 goto :EOF
 
 :resetSettings
-REM TODO: Reset settings when implemented.
+echo Settings reset to default
+(
+    echo Update_on_startup=1
+    echo Collect_cache_when_reporting_a_bug=1
+    echo Offline_mode=0
+)>settings.cryuip
 goto :EOF
 
 :resetWinInfo
