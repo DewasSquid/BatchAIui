@@ -45,6 +45,7 @@ REM Reset each data one by one in order
 for %%i in (!dataIDsToReset!) do (
     call :resetByID %%i
 )
+call modules\menu.bat
 
 :resetByID
 REM This subroutine checks the specified ID and reset it if found.
@@ -76,5 +77,3 @@ goto :EOF
 :resetWinInfo
 call main.bat
 goto :EOF
-
-call modules\menu.bat
