@@ -12,6 +12,8 @@ call plugins\batbox/g 0 10 /c 0x0f /d "Description: Describe what the bug was, w
 
 REM Ask for contacts
 call plugins\batbox /g 0 5 /c 0x07 & set /p userContact=
+REM Check if the contact value is empty
+if "!userContact!"=="" set userContact=Not specified.
 
 REM Ask for the title
 call plugins\batbox /g 0 8 /c 0x07 & set /p bugTitle=
@@ -28,7 +30,7 @@ REM Ask for confirmation
 cls
 echo You confirm the following informations (Y to confirm, ESC to leave, other keys to go to back.):
 echo.
-echo !userContact!
+echo YOU: !userContact!
 echo BUG: !bugTitle!
 echo !bugDescription!
 
@@ -57,7 +59,7 @@ echo Content-Type: application/json>cache\r_header.txt
    echo             "name": "Description",
    echo             "value": "!bugDescription!",
    echo             "inline": false
-   echo          }
+   echo          },
    echo       ]
    echo    }]
    echo }
@@ -65,3 +67,4 @@ echo Content-Type: application/json>cache\r_header.txt
 
 REM Send the message
 call modules\winhttpjs !bugWebhookLink! -method POST -header cache\r_header.txt -body-file cache\r_body.json -saveTo cache\http_log.txt
+pause
