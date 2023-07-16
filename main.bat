@@ -1,13 +1,16 @@
 @echo off
 setlocal enabledelayedexpansion
 
+title BatchAI
+
 REM TODO: Remote update
 
-:config
-set aiName=BatchAI
-set version=0.1.5
+:startup
+cls
 
-title BatchAI
+REM Program config
+set aiName=BatchAI
+set version=0.1.5  
 
 REM Load secrets/env as values
 for /f "tokens=*" %%a in (.\.sec) do (
@@ -41,14 +44,10 @@ for /l %%x in (0, 1, !windowWidth!) do (
     set fillWindowWidth=!fillWindowWidth!X
 )
 
-:startup
-cls
-
 REM Show the startup text on the center of the window
 call plugins\batbox /g !windowCenterWidth! !windowCenterHeight! /c 0xa /d "!aiName!" /n
 call plugins\batbox /c 0x8 /d "Press any key..."
 
-REM Wait for user input
 pause > nul
 
 call pages\Home.bat
