@@ -5,7 +5,7 @@ call modules\navbar "Settings"
 
 REM Display settings
 set /a currentDisplayY=3
-for /f "tokens=1,2 eol=# delims==" %%a in (.\settings.cryuip) do (
+for /f "tokens=1,2 delims==" %%a in (.\settings.cryuip) do (
     REM Replace the "_" in the current setting's name by spaces 
     set settingName=%%a
     set settingName=!settingName:_= !

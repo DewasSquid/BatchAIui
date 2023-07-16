@@ -1,8 +1,2 @@
-# Automaticly update when the computer starts
-# Updates will still occur when you start the app, except if offline mode was previously enabled
 Update_on_startup=1
-
-# Shall offline mode be enabled ?
-# This will download data from our server to your local machine, remove TOS security measures and allow you to play with the AI as much as you want
-# Once this option is enabled, you will not recieve any new updates until disabled
 Offline_mode=0
