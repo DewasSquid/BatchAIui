@@ -1,6 +1,6 @@
 # Automaticly update when the computer starts
 # Updates will still occur when you start the app, except if offline mode was previously enabled
-Update_on_startup=0
+Update_on_startup=1
 
 # Send cache to BatchAi developpers when reporting a bug (including conversation with AI)
 Should_collect_cache=1
