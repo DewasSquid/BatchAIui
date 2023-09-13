@@ -11,3 +11,8 @@ The list include :
   - typewriter
   - getinput
   - editline
+
+## Screenshots
+![image](https://github.com/DewasSquid/BatchAIui/assets/70018300/69fdff2d-912f-4ac1-a818-718153dbfc39)
+![image](https://github.com/DewasSquid/BatchAIui/assets/70018300/2b060b94-4957-4821-8ace-87662ab85ba6)
+
